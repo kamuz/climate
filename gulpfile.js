@@ -19,11 +19,14 @@ var scssSource = [
 ];
 var sassOutput = 'css/src';
 var cssSource = [
+    'libs/bootstrap/css/bootstrap.min.css',
     'css/src/styles.css'
 ];
 var jsSource = [
     // Dependencies
-    'libs/jquery/jquery.js',
+    'libs/jquery/jquery-slim.min.js',
+    'libs/popper/popper.min.js',
+    'libs/bootstrap/bootstrap.min.js',
     // Init
     'js/src/main.js',
 ];
