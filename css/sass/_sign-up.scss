@@ -1,0 +1,81 @@
+.sign-up {
+    .choose-provider {
+        text-align: center;
+
+        a {
+            height: 53px;
+            padding: 0;
+            line-height: 53px;
+
+            &:first-child {
+                img {
+                    margin-right: 10px;
+                }
+            }
+
+            img {
+                display: inline-block;
+                margin-top: -2px;
+            }
+        }
+    }
+
+    form {
+        legend {
+            text-align: center;
+            font-size: 16px;
+            color: #757575;
+            padding: 20px 0 10px;
+            display: block;
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 170px;
+                border-top: 1px solid $btnGrayBg;
+                position: absolute;
+                top: 33px;
+                left: 0;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                width: 170px;
+                border-top: 1px solid $btnGrayBg;
+                position: absolute;
+                top: 33px;
+                right: 0;
+            }
+
+        }
+
+        input,
+        button {
+            height: 53px;
+            line-height: 53px;
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 16px;
+            height: 53px;
+            padding: 0;
+            font-weight: bold;
+
+            &.btn-success.disabled,
+            &.btn-success:disabled {
+                border: none;
+                background-color: $btnGrayBg;
+                color: $btnGrayColor;
+            }
+        }
+
+        .help{
+            text-align: center;
+            margin: 30px 0;
+            line-height: 40px;
+        }
+    }
+}

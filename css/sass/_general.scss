@@ -6,11 +6,94 @@ body {
         font-size: 16px;
     }
 
-    .container-fluid{
-        padding: 0 30px;
+    a,
+    a:hover {
+        color: $mainGreen;
+    }
+
+    .padding-0{
+        padding-right:0;
+        padding-left:0;
+    }
+
+    .btn,
+    input,
+    text-area {
+        border-radius: 8px !important;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    textarea {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="email"]:focus,
+    textarea {
+        border: 1px solid #32b353;
+        box-shadow: 0px 1px 5px rgba(50, 179, 83, 0.4);
+    }
+
+    .list-group-item:first-child {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .list-group-item:last-child {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+
+    .gray-link,
+    .gray-link:hover {
+        color: #a3a3a3
     }
 
     .hidden {
         display: none;
+    }
+
+    .simple {
+        header {
+            margin: 30px 0 80px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+    }
+
+    .scroll-down{
+        height: 100vh;
+        overflow-y: scroll;
+    }
+
+    .left-bg {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+
+        h2 {
+            font-weight: 900;
+            padding: 0 30px;
+        }
+
+        .signature {
+            position: absolute;
+            bottom: 50px;
+            left: 30px;
+
+            p {
+                margin-top: 24px;
+                font-size: 14px;
+                font-weight: 900;
+            }
+        }
     }
 }

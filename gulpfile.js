@@ -24,7 +24,7 @@ var cssSource = [
 ];
 var jsSource = [
     // Dependencies
-    'libs/jquery/jquery-slim.min.js',
+    'libs/jquery/jquery.min.js',
     'libs/popper/popper.min.js',
     'libs/bootstrap/bootstrap.min.js',
     // Init
