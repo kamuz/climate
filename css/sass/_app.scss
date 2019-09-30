@@ -1,19 +1,15 @@
 .app {
-    // Navigation Variables
-    $content-width: 1000px;
     $breakpoint: 799px;
-    $nav-height: 70px;
-    $nav-background: #262626;
-    $nav-font-color: #ffffff;
-    $link-hover-color: #2581DC;
+    $nav-height: 120px;
+    $nav-background: #fff;
+    $nav-font-color: #000;
 
-    // Outer navigation wrapper
     .navigation {
         height: $nav-height;
         background: $nav-background;
+        box-shadow: 0px 1px 22px rgba(0, 0, 0, 0.06);
     }
 
-    // Logo and branding
     .brand {
         position: absolute;
         padding-left: 20px;
@@ -29,13 +25,10 @@
         }
     }
 
-    // Container with no padding for navbar
     .nav-container {
-        max-width: $content-width;
         margin: 0 auto;
     }
 
-    // Navigation 
     nav {
         float: right;
 
@@ -47,19 +40,21 @@
             li {
                 float: left;
                 position: relative;
+                padding: 0 20px;
 
                 a,
                 a:visited {
                     display: block;
-                    padding: 0 20px;
-                    line-height: $nav-height;
+                    padding-bottom: 2px;
+                    margin-top: 48px;
                     background: $nav-background;
                     color: $nav-font-color;
                     text-decoration: none;
+                    transition: all 0.5s;
 
                     &:hover {
-                        background: $link-hover-color;
-                        color: $nav-font-color;
+                        color: $mainGreen;
+                        border-bottom: 3px solid $mainGreen;
                     }
 
                     &:not(:only-child):after {
@@ -68,7 +63,6 @@
                     }
                 }
 
-                // Dropdown list
                 ul li {
                     min-width: 190px;
 
@@ -81,7 +75,6 @@
         }
     }
 
-    // Dropdown list binds to JS toggle event
     .nav-dropdown {
         position: absolute;
         display: none;
@@ -89,9 +82,6 @@
         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
     }
 
-    /* Mobile navigation */
-
-    // Binds to JS Toggle
     .nav-mobile {
         display: none;
         position: absolute;
@@ -104,7 +94,6 @@
 
     @media only screen and (max-width: 798px) {
 
-        // Hamburger nav visible on mobile only
         .nav-mobile {
             display: block;
         }
@@ -149,26 +138,32 @@
         cursor: pointer;
         padding: 10px 35px 16px 0px;
 
-        span,
+        span{
+            position: absolute;
+            width: 25px;
+            display: block;
+            height: 3px;
+            
+        }
         span:before,
         span:after {
+            position: absolute;
+            width: 25px;
+            display: block;
+            height: 3px;
+            content: '';
             cursor: pointer;
             border-radius: 1px;
-            height: 5px;
-            width: 35px;
             background: $nav-font-color;
-            position: absolute;
-            display: block;
-            content: '';
             transition: all 300ms ease-in-out;
         }
 
         span:before {
-            top: -10px;
+            top: 6px;
         }
 
         span:after {
-            bottom: -10px;
+            bottom: 6px;
         }
 
         &.active span {
@@ -189,9 +184,7 @@
         }
     }
 
-    // Page content 
     article {
-        max-width: $content-width;
         margin: 0 auto;
         padding: 10px;
     }
