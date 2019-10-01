@@ -5,7 +5,7 @@
 - [Login](https://kamuz.github.io/climate/login.html)
 - [Recovery Password](https://kamuz.github.io/climate/forgot.html)
 
-Install Node.js and NPM and Gulp CLI:
+Install Node.js, NPM and Gulp CLI:
 
 ```
 npm install gulp-cli -g
@@ -17,7 +17,7 @@ Install dependencies:
 npm i
 ```
 
-Run Gulp task
+Run Gulp tasks
 
 ```
 gulp

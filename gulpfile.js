@@ -26,7 +26,7 @@ var jsSource = [
     // Dependencies
     'libs/jquery/jquery.min.js',
     'libs/popper/popper.min.js',
-    'libs/bootstrap/bootstrap.min.js',
+    'libs/bootstrap/js/bootstrap.min.js',
     // Init
     'js/src/main.js',
 ];

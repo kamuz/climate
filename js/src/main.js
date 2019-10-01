@@ -2,7 +2,6 @@
     $(function() {
         $('nav ul li a:not(:only-child)').click(function(e) {
             $(this).siblings('.nav-dropdown').toggle();
-            $('.nav-dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
         $('html').click(function() {
@@ -13,6 +12,15 @@
         });
         $('#nav-toggle').on('click', function() {
             this.classList.toggle('active');
+        });
+
+        $('.nav-dropdown .notifications, .nav-dropdown .switch-accout').click(function(){
+            $(this).next('div').fadeIn();
+        });
+
+        $('.nav-dropdown .close').click(function(){
+            console.log("close");
+            $(this).parent().fadeOut();
         });
     });
 })(jQuery);
