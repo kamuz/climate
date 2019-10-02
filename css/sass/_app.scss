@@ -1,301 +1,53 @@
-.app {
-    .navigation {
-        height: 120px;
-        background: #fff;
-        box-shadow: 0px 1px 22px rgba(0, 0, 0, 0.06);
+.content {
+    padding: 45px 0;
 
-        .brand {
-            line-height: 120px;
-            text-transform: uppercase;
-            font-size: 1.4em;
+    h1 {
+        font-weight: 900;
+        font-size: 34px;
+    }
 
-            a,
-            a:visited {
-                color: #000;
-                text-decoration: none;
-            }
+    .account-details {
+        p {
+            margin-bottom: 0;
         }
+    }
 
-        .nav-container {
-            margin: 0 auto;
+    .setup-account {
+        font-size: 14px;
+
+        strong {
+            color: $mainBlue;
         }
+    }
 
-        nav {
-            ul {
-                list-style: none;
-                padding: 50px 0 0 0;
-                margin: 0;
-                float: right;
+    .setup-items {
+        .card {
+            .card-body {
+                text-align: center;
 
-                li {
-                    float: left;
-                    position: relative;
-                    padding: 0;
-
-                    &:nth-child(2) {
-                        padding: 0 30px;
-                    }
-
-                    a,
-                    a:visited {
-                        display: block;
-                        padding-bottom: 2px;
-                        color: #000;
-                        text-decoration: none;
-                        transition: all 0.5s;
-
-                        &:hover {
-                            color: $mainGreen;
-                            border-bottom: 3px solid $mainGreen;
-                        }
-
-                        &:not(:only-child):after {
-                            padding-left: 4px;
-                            // content: ' ▾';
-                        }
-
-                        &.question {
-                            border: none;
-                            margin-right: 10px;
-
-                            i {
-                                font-size: 28px;
-                                color: $mainGreen;
-                            }
-
-                            span {
-                                display: none;
-                            }
-                        }
-                    }
-
-                    &.dropdown {
-                        position: relative;
-                        padding-left: 15px;
-                        bottom: 5px;
-                        display: inline-block;
-                        padding-right: 0 !important;
-
-                        &:before {
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            top: -1px;
-                            height: 32px;
-                            width: 1px;
-                            background-color: #E8E8E8;
-                        }
-
-                        a {
-                            border: none !important;
-
-                            .float-left {
-                                margin-right: 15px;
-                                line-height: 1;
-
-                                .full-name {
-                                    color: #0b0c16;
-                                    font-weight: 900;
-                                }
-
-                                .email {
-                                    color: #a3a3a3;
-                                }
-                            }
-
-                            .float-right {
-                                .avatar {
-                                    display: inline-block;
-                                    position: relative;
-                                    bottom: 10px;
-                                    border-radius: 100%;
-                                    border: 3px solid $mainGreen;
-                                }
-                            }
-                        }
-                    }
-
-                    ul li {
-                        min-width: 100%;
-                        padding: 0 5px;
-
-                        a {
-                            padding: 12px;
-                            line-height: 20px;
-                        }
-                    }
+                h3 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 30px 0 38px;
                 }
-            }
-        }
 
-        .nav-dropdown {
-            padding-top: 0;
-            top: 55px;
-            right: 0;
-            position: absolute;
-            display: none;
-            z-index: 1;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
-            border-radius: 5px;
-            background-color: #fff;
+                img {
+                    width: auto;
+                }
 
-            li {
-                padding: 0 5px !important;
-                a {
+                button {
+                    width: 140px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    height: 43px;
+                    margin-top: 35px;
+                }
+
+                .card-text.text-muted{
                     font-size: 14px;
+                    font-weight: 400;
+                    color: #a3a3a3 !important;
                 }
-
-                &:last-child {
-                    border-top: 1px solid #C8C8C8;
-                }
-            }
-        }
-
-        .nav-mobile {
-            display: none;
-            position: absolute;
-            top: 0;
-            right: 0;
-            background: #fff;
-            height: 85px;
-            width: 85px;
-        }
-
-        .col-lg-6:first-child {
-            .nav-list {
-                width: 270px;
-                margin: 0 auto;
-            }
-        }
-
-
-    }
-
-
-    @media only screen and (max-width: 992px) {
-
-        .hidden-mobile {
-            display: none !important;
-        }
-
-        .show-mobile {
-            display: block !important;
-        }
-
-        .navigation {
-            height: 85px;
-
-            .brand {
-                padding-top: 21px;
-            }
-
-            .nav-mobile {
-                display: block;
-                height: 85px;
-            }
-
-            nav {
-                width: 100%;
-                padding: 85px 0 15px;
-
-                ul {
-                    display: none;
-                    padding-top: 20px;
-                    background-color: #fff;
-
-                    li {
-                        float: none;
-
-                        a {
-                            padding: 15px;
-                            line-height: 20px;
-                            border: none;
-                            font-size: 24px;
-                            text-align: center;
-
-                            &.question {
-                                margin-left: 0;
-                                border: none;
-
-                                i {
-                                    display: none;
-                                }
-
-                                span {
-                                    display: block;
-                                }
-                            }
-                        }
-
-                        ul li a {
-                            padding-left: 30px;
-                        }
-                    }
-                }
-            }
-
-            .nav-dropdown {
-                position: static;
-            }
-        }
-    }
-
-    @media screen and (min-width: 992px) {
-        .nav-list {
-            display: block !important;
-        }
-    }
-
-    #nav-toggle {
-        position: absolute;
-        right: 24px;
-        top: 32px;
-        cursor: pointer;
-        padding: 10px 35px 16px 0px;
-
-        span {
-            position: absolute;
-            width: 25px;
-            display: block;
-            height: 3px;
-
-        }
-
-        span:before,
-        span:after {
-            position: absolute;
-            width: 25px;
-            display: block;
-            height: 3px;
-            content: '';
-            cursor: pointer;
-            border-radius: 1px;
-            background: #000;
-            transition: all 300ms ease-in-out;
-        }
-
-        span:before {
-            top: 6px;
-        }
-
-        span:after {
-            bottom: 6px;
-        }
-
-        &.active span {
-            background-color: transparent;
-
-            &:before,
-            &:after {
-                top: 0;
-            }
-
-            &:before {
-                transform: rotate(45deg);
-            }
-
-            &:after {
-                transform: rotate(-45deg);
             }
         }
     }

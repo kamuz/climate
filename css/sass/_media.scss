@@ -1,11 +1,12 @@
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+
     .index .container-fluid,
     .sign-up .container-fluid {
         padding: 0 0 0 30px;
     }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .sign-up {
         .container-fluid {
             .row {
@@ -19,9 +20,74 @@
     .container-fluid {
         padding: 0 15px;
     }
+
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    .show-mobile {
+        display: block !important;
+    }
+
+    .navigation {
+        height: 85px;
+
+        .brand {
+            padding-top: 21px;
+        }
+
+        .nav-mobile {
+            display: block;
+            height: 85px;
+        }
+
+        nav {
+            width: 100%;
+            padding: 85px 0 15px;
+
+            ul {
+                display: none;
+                padding-top: 20px;
+                background-color: #fff;
+
+                li {
+                    float: none;
+
+                    a {
+                        padding: 15px;
+                        line-height: 20px;
+                        border: none;
+                        font-size: 24px;
+                        text-align: center;
+
+                        &.question {
+                            margin-left: 0;
+                            border: none;
+
+                            i {
+                                display: none;
+                            }
+
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    ul li a {
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+
+        .nav-dropdown {
+            position: static;
+        }
+    }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .hidden-mobile {
         display: none !important;
     }
@@ -31,7 +97,9 @@
     }
 
     .sign-up {
-        div, p{
+
+        div,
+        p {
             font-size: 14px;
         }
 
@@ -43,7 +111,7 @@
             }
         }
 
-        h1{
+        h1 {
             text-align: center;
         }
 
@@ -67,6 +135,11 @@
     }
 }
 
-@media (max-width: 576px) {
-    
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (min-width: 992px) {
+    .nav-list {
+        display: block !important;
+    }
 }
