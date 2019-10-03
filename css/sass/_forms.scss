@@ -1,0 +1,103 @@
+body {
+
+    input.form-control,
+    select.form-control,
+    textarea.form-control {
+        height: 53px;
+        line-height: 53px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    input[type="text"].form-control,
+    input[type="password"].form-control,
+    input[type="email"].form-control,
+    select.form-control,
+    textarea.form-control {
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="text"].form-control:focus,
+    input[type="password"].form-control:focus,
+    input[type="email"].form-control:focus,
+    select.form-control:focus,
+    textarea.form-control {
+        border: 1px solid #32b353;
+        box-shadow: 0px 1px 5px rgba(50, 179, 83, 0.4);
+    }
+
+    button {
+        font-size: 16px !important;
+        height: 53px !important;
+        padding: 0;
+        font-weight: bold;
+
+        &.btn-success.disabled.form-control,
+        &.btn-success:disabled {
+            border: none;
+            background-color: $btnGrayBg;
+            color: $btnGrayColor;
+
+            &:hover {
+                color: $btnGrayColor;
+            }
+        }
+    }
+
+    #card-number {
+        border-bottom: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        background: url('../img/card-list.png') no-repeat 96% 15px;
+    }
+
+    #country-region {
+        border-bottom: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    #card-date {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+
+    #card-cvc {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    #zip-code {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    label[for="card-cvc"]{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    label[for="card-cvc"]:after {
+        position: absolute;
+        color: #a3a3a3;
+        content: '\e90d';
+        font-size: 28px;
+        right: 5px;
+        top: 4px;
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        display: inline-block;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+
+    }
+}

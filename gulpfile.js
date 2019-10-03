@@ -27,6 +27,7 @@ var jsSource = [
     'libs/jquery/jquery.min.js',
     'libs/popper/popper.min.js',
     'libs/bootstrap/js/bootstrap.min.js',
+    'libs/inputmask/inputmask.min.js',
     // Init
     'js/src/main.js',
 ];

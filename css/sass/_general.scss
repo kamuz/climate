@@ -11,29 +11,18 @@ body {
         color: $mainGreen;
     }
 
-    .padding-0{
-        padding-right:0;
-        padding-left:0;
+    button,
+    a{
+        outline: none !important;
     }
 
-    input,
-    text-area {
-        border-radius: 8px !important;
+    .padding-0 {
+        padding-right: 0;
+        padding-left: 0;
     }
 
-    input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    textarea {
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    input[type="text"]:focus,
-    input[type="password"]:focus,
-    input[type="email"]:focus,
-    textarea {
-        border: 1px solid #32b353;
-        box-shadow: 0px 1px 5px rgba(50, 179, 83, 0.4);
+    .fz-14 {
+        font-size: 14px;
     }
 
     .list-group-item:first-child {
@@ -67,7 +56,7 @@ body {
         }
     }
 
-    .scroll-down{
+    .scroll-down {
         height: 100vh;
         overflow-y: auto;
     }
@@ -96,9 +85,24 @@ body {
         }
     }
 
-    .progress{
+    .progress {
         border-radius: 10px;
         border: 2px solid $mainBlue;
         background: none;
+        padding: 2px;
+        height: 17px;
+    }
+
+    .progress-bar {
+        border-radius: 8px;
+        background-color: #CED5FE;
+    }
+
+    .card {
+        border-radius: 8px;
+    }
+
+    #setup-company {
+        padding: 0 !important;
     }
 }

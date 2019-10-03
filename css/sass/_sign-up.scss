@@ -51,27 +51,6 @@
 
         }
 
-        input,
-        button {
-            height: 53px;
-            line-height: 53px;
-            font-size: 16px;
-        }
-
-        button {
-            font-size: 16px;
-            height: 53px;
-            padding: 0;
-            font-weight: bold;
-
-            &.btn-success.disabled,
-            &.btn-success:disabled {
-                border: none;
-                background-color: $btnGrayBg;
-                color: $btnGrayColor;
-            }
-        }
-
         .help{
             text-align: center;
             margin: 30px 0;

@@ -20,5 +20,10 @@
             console.log("close");
             $(this).parent().fadeOut();
         });
+        $('.next-slide').click(function(e){
+            e.preventDefault();
+            $(".carousel").carousel("next");
+        });
+        $(":input").inputmask();
     });
 })(jQuery);
