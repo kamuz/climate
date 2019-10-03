@@ -43,7 +43,8 @@
                     text-decoration: none;
                     transition: all 0.5s;
 
-                    &:hover {
+                    &:hover,
+                    &.active {
                         color: $mainGreen;
                         border-bottom: 3px solid $mainGreen;
                     }

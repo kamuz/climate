@@ -1,21 +1,47 @@
 .btn {
     transition: all 0.5s;
-}
+    border-radius: 8px !important;
 
-.btn-success {
-    background-color: $mainGreen;
-    border-color: $mainGreen;
-}
+    &.btn-success {
+        background-color: $mainGreen;
+        border-color: $mainGreen;
 
-.btn-primary {
-    background-color: $mainBlue;
-    border-color: $mainBlue;
-}
+        &:hover {
+            color: #EAF7ED;
+        }
+    }
 
-.btn-lg{
-    font-size: 16px;
-    font-weight: bold;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 15px;
+    &.btn-primary {
+        background-color: $mainBlue;
+        border-color: $mainBlue;
+    }
+
+    &.btn-outline-success {
+        &:hover {
+            background-color: #EAF7ED;
+            color: $mainGreen;
+        }
+    }
+
+    &.btn-lg{
+        font-size: 16px;
+        font-weight: bold;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 15px;
+    }
+
+    &.br-5 {
+        border-radius: 5px !important;
+    }
+
+    &.load-more{
+        font-size: 16px;
+        width: 370px;
+        font-weight: 500;
+        padding: 0;
+        height: 40px;
+        line-height: 1;
+        border-radius: 5px !important;
+    }
 }

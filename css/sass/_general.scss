@@ -16,7 +16,6 @@ body {
         padding-left:0;
     }
 
-    .btn,
     input,
     text-area {
         border-radius: 8px !important;
@@ -95,5 +94,11 @@ body {
                 font-weight: 900;
             }
         }
+    }
+
+    .progress{
+        border-radius: 10px;
+        border: 2px solid $mainBlue;
+        background: none;
     }
 }
