@@ -4,6 +4,8 @@
 - [Sign Up](https://kamuz.github.io/climate/sign-up.html)
 - [Login](https://kamuz.github.io/climate/login.html)
 - [Recovery Password](https://kamuz.github.io/climate/forgot.html)
+- [In-App Onboarding](https://kamuz.github.io/climate/onboarding.html)
+- [In-App Onboarding in progress](https://kamuz.github.io/climate/onboarding-progress.html)
 
 Install Node.js, NPM and Gulp CLI:
 
