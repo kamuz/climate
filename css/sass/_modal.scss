@@ -81,4 +81,19 @@
             }
         }
     }
+
+    &#plant-trees {
+        .btn-lg {
+            height: 43px;
+            padding: 0;
+            line-height: 42px;
+            width: 145px;
+        }
+
+        p {
+            font-weight: normal;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+    }
 }
