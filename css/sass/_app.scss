@@ -400,4 +400,76 @@
             }
         }
     }
+
+    .extentions {
+        margin-top: 30px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .extentions-list {
+            margin-top: 40px;
+
+            .col-md-6 {
+                &:nth-child(even) {
+                    padding-left: 10px;
+                }
+
+                &:nth-child(odd) {
+                    padding-right: 10px;
+                }
+
+                .card {
+                    height: 420px;
+                    text-align: center;
+                    margin-bottom: 20px;
+
+                    .badge {
+                        top: 20px;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        padding: 5px 8px;
+
+                        &.left {
+                            left: 20px;
+                        }
+
+                        &.right {
+                            right: 20px;
+                        }
+
+                        &.badge-secondary {
+                            background-color: #e8e8e8;
+                            color: #8c8c8c;
+                        }
+                    }
+
+                    .img-wrap {
+                        height: 140px;
+                    }
+
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+
+                    .card-text {
+                        height: auto;
+                        min-height: 65px;
+                    }
+
+                    .btn {
+                        background-color: #e8e8e8;
+                        height: 43px;
+                        line-height: 43px;
+                        padding: 0;
+                        width: 142px;
+                    }
+
+                    .read-more {}
+                }
+            }
+
+        }
+    }
 }
