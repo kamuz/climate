@@ -8,6 +8,7 @@
 - [In-App Onboarding in progress](https://kamuz.github.io/climate/onboarding-progress.html)
 - [Dashboard](https://kamuz.github.io/climate/dashboard.html)
 - [History](https://kamuz.github.io/climate/history.html)
+- [Extentions](https://kamuz.github.io/climate/extentions.html)
 
 Install Node.js, NPM and Gulp CLI:
 
