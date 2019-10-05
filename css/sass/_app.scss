@@ -1,5 +1,5 @@
 .content {
-    padding: 45px 0;
+    padding: 35px 0;
 
     h1 {
         font-weight: 900;
@@ -116,8 +116,36 @@
         }
     }
 
-    hr {
-        border-width: 2px;
+    .transaction-history {
+        margin-top: 35px;
+
+        td:nth-child(1) {
+            width: 50%;
+        }
+
+        td:nth-child(2) {
+            text-align: center;
+            width: 30%;
+
+            .tree-price {
+                font-size: 22px;
+                color: #000;
+            }
+        }
+
+        td:nth-child(3) {
+            text-align: right;
+            width: 20%;
+            vertical-align: middle;
+
+            .btn {
+                background-color: #e8e8e8;
+                width: 76px;
+                height: 43px;
+                line-height: 43px;
+                padding: 0;
+            }
+        }
     }
 
     .filters {

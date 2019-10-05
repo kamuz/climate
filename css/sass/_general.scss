@@ -16,6 +16,10 @@ body {
         outline: none !important;
     }
 
+    hr {
+        border-width: 2px;
+    }
+
     .padding-0 {
         padding-right: 0;
         padding-left: 0;
@@ -108,5 +112,9 @@ body {
 
     .color-blue {
         color: $mainBlue !important;
+    }
+
+    .color-green {
+        color: $mainGreen !important;
     }
 }
