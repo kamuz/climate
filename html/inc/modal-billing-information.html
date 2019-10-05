@@ -12,38 +12,38 @@
                         <div class="container">
                             <div class="col-md-6 offset-md-3">
                                 <h3>H3. Payment Information <i class="icon-lock"></i></h3>
-                                <form>
+                                <form class="needs-validation" novalidate>
                                     <div class="form-row">
                                         <div class="form-group col-md-12">
                                             <label for="card-number">Card Details</label>
                                             <div class="row no-gutters">
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control form-control-lg" id="card-number" placeholder="0000 0000 0000 0000" data-inputmask="'mask': '9999 9999 9999 9999'">
+                                                    <input type="text" class="form-control form-control-lg" id="card-number" placeholder="0000 0000 0000 0000" data-inputmask="'mask': '9999 9999 9999 9999'" required>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input type="text" class="form-control form-control-lg" id="card-date" placeholder="MM / YY" data-inputmask="'mask': '99 / 99'">
+                                                    <input type="text" class="form-control form-control-lg" id="card-date" placeholder="MM / YY" data-inputmask="'mask': '99 / 99'" required>
                                                 </div>
                                                 <div class="col-6 position-relative">
                                                     <label for="card-cvc"></label>
-                                                    <input type="text" class="form-control form-control-lg" id="card-cvc" placeholder="CVC" data-inputmask="'mask': '999'">
+                                                    <input type="text" class="form-control form-control-lg" id="card-cvc" placeholder="CVC" data-inputmask="'mask': '999'" required>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="country-region">Country or region</label>
-                                        <select id="country-region" class="form-control form-control-lg">
+                                        <select id="country-region" class="select2 form-control form-control-lg" required>
                                             <option selected>Choose</option>
                                             <option>United States</option>
                                             <option>Canada</option>
                                         </select>
-                                        <input type="text" class="form-control form-control-lg" id="zip-code" placeholder="ZIP Code" data-inputmask="'mask': '99999[-9999]'">
+                                        <input type="text" class="form-control form-control-lg" id="zip-code" placeholder="ZIP Code" data-inputmask="'mask': '99999[-9999]'" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="vat">VAT number (optional)</label>
-                                        <input type="text" class="form-control form-control-lg" id="vat" placeholder="PL">
+                                        <input type="text" class="form-control form-control-lg" id="vat" placeholder="PL" required>
                                     </div>
-                                    <button type="submit" class="btn btn-block btn-lg btn-success next-slide">Save</button>
+                                    <button type="submit" class="btn btn-block btn-lg btn-success">Save</button>
                                 </form>
                                 <a href="#" class="mt-4 d-block fz-14">Why do I need to do this?</a>
                             </div>

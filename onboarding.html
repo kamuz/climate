@@ -24,9 +24,9 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <ul class="nav-list">
-                                            <li><a href="#" class="active">Dashboard</a></li>
-                                            <li><a href="#">History</a></li>
-                                            <li><a href="#">Extentions</a></li>
+                                            <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                                            <li><a href="history.html">History</a></li>
+                                            <li><a href="extentions.html">Extentions</a></li>
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
@@ -39,11 +39,12 @@
                                                         <span class="email">nic@example.com</span>
                                                     </div>
                                                     <div class="float-right">
+                                                        <span class="notification-count">6</span>
                                                         <span class="avatar"><img src="img/avatar.png" width="49" height="49" alt="User Avatar"></span>
                                                     </div>
                                                 </a>
                                                 <ul class="nav-dropdown">
-                                                    <li class="notifications"><a class="arrow-left" href="javascript:void(0)">Notifications</a>
+                                                    <li class="notifications"><a class="arrow-left" href="javascript:void(0)">Notifications <span class="notification-count">10</span></a>
                                                         <div class="notifications-wrap">
                                                             <a href="#" class="close"><i class="icon-arrow-left"></i></a>
                                                             <h3>Notifications</h3>
@@ -475,14 +476,14 @@
                         <div class="container">
                             <div class="col-md-6 offset-md-3">
                                 <h3>H3. Company information</h3>
-                                <form>
-                                    <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="false">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#carouselContent" data-slide-to="0" class="active"></li>
-                                            <li data-target="#carouselContent" data-slide-to="1"></li>
-                                        </ol>
-                                        <div class="carousel-inner" role="listbox">
-                                            <div class="carousel-item active">
+                                <div id="carouselContent" class="carousel slide" data-ride="carousel" data-interval="false">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselContent" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselContent" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <form class="needs-validation" novalidate>
                                                 <div class="form-group">
                                                     <label for="inputAddress">Company Name</label>
                                                     <input type="text" class="form-control form-control-lg" id="inputAddress" placeholder="">
@@ -520,13 +521,15 @@
                                                         <input type="text" class="form-control form-control-lg" id="inputZip">
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-block btn-lg btn-success next-slide" disabled>Next</button>
-                                            </div>
-                                            <div class="carousel-item">
+                                                <button type="submit" class="btn btn-block btn-lg btn-success next-slide" disabled>Next</button>
+                                            </form>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <form class="needs-validation" novalidate>
                                                 <div class="form-group">
                                                     <div class="form-group">
                                                         <label for="inputState">Which best discribes your company?</label>
-                                                        <select id="inputState" class="form-control form-control-lg">
+                                                        <select id="inputState" class="form-control form-control-lg" required>
                                                             <option selected>Choose...</option>
                                                             <option>One</option>
                                                             <option>Two</option>
@@ -537,7 +540,7 @@
                                                 <div class="form-group">
                                                     <div class="form-group">
                                                         <label for="inputState">How many people are in your oganization?</label>
-                                                        <select id="inputState" class="form-control form-control-lg">
+                                                        <select id="inputState" class="form-control form-control-lg" required>
                                                             <option selected>Choose...</option>
                                                             <option>One</option>
                                                             <option>Two</option>
@@ -548,7 +551,7 @@
                                                 <div class="form-group">
                                                     <div class="form-group">
                                                         <label for="inputState">Age of your organization</label>
-                                                        <select id="inputState" class="form-control form-control-lg">
+                                                        <select id="inputState" class="form-control form-control-lg" required>
                                                             <option selected>Choose...</option>
                                                             <option>One</option>
                                                             <option>Two</option>
@@ -556,10 +559,10 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <button type="submit" class="btn btn-block btn-lg btn-success next-slide">Save</button>
-                                            </div>
+                                                <button type="submit" class="btn btn-block btn-lg btn-success">Save</button>
                                         </div>
                                     </div>
+                                </div>
                                 </form>
                             </div>
                         </div>
@@ -583,38 +586,38 @@
                         <div class="container">
                             <div class="col-md-6 offset-md-3">
                                 <h3>H3. Payment Information <i class="icon-lock"></i></h3>
-                                <form>
+                                <form class="needs-validation" novalidate>
                                     <div class="form-row">
                                         <div class="form-group col-md-12">
                                             <label for="card-number">Card Details</label>
                                             <div class="row no-gutters">
                                                 <div class="col-12">
-                                                    <input type="text" class="form-control form-control-lg" id="card-number" placeholder="0000 0000 0000 0000" data-inputmask="'mask': '9999 9999 9999 9999'">
+                                                    <input type="text" class="form-control form-control-lg" id="card-number" placeholder="0000 0000 0000 0000" data-inputmask="'mask': '9999 9999 9999 9999'" required>
                                                 </div>
                                                 <div class="col-6">
-                                                    <input type="text" class="form-control form-control-lg" id="card-date" placeholder="MM / YY" data-inputmask="'mask': '99 / 99'">
+                                                    <input type="text" class="form-control form-control-lg" id="card-date" placeholder="MM / YY" data-inputmask="'mask': '99 / 99'" required>
                                                 </div>
                                                 <div class="col-6 position-relative">
                                                     <label for="card-cvc"></label>
-                                                    <input type="text" class="form-control form-control-lg" id="card-cvc" placeholder="CVC" data-inputmask="'mask': '999'">
+                                                    <input type="text" class="form-control form-control-lg" id="card-cvc" placeholder="CVC" data-inputmask="'mask': '999'" required>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="country-region">Country or region</label>
-                                        <select id="country-region" class="form-control form-control-lg">
+                                        <select id="country-region" class="select2 form-control form-control-lg" required>
                                             <option selected>Choose</option>
                                             <option>United States</option>
                                             <option>Canada</option>
                                         </select>
-                                        <input type="text" class="form-control form-control-lg" id="zip-code" placeholder="ZIP Code" data-inputmask="'mask': '99999[-9999]'">
+                                        <input type="text" class="form-control form-control-lg" id="zip-code" placeholder="ZIP Code" data-inputmask="'mask': '99999[-9999]'" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="vat">VAT number (optional)</label>
-                                        <input type="text" class="form-control form-control-lg" id="vat" placeholder="PL">
+                                        <input type="text" class="form-control form-control-lg" id="vat" placeholder="PL" required>
                                     </div>
-                                    <button type="submit" class="btn btn-block btn-lg btn-success next-slide">Save</button>
+                                    <button type="submit" class="btn btn-block btn-lg btn-success">Save</button>
                                 </form>
                                 <a href="#" class="mt-4 d-block fz-14">Why do I need to do this?</a>
                             </div>

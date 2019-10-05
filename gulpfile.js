@@ -20,6 +20,7 @@ var scssSource = [
 var sassOutput = 'css/src';
 var cssSource = [
     'libs/bootstrap/css/bootstrap.min.css',
+    'libs/select2/css/select2.min.css',
     'css/src/styles.css'
 ];
 var jsSource = [
@@ -28,6 +29,7 @@ var jsSource = [
     'libs/popper/popper.min.js',
     'libs/bootstrap/js/bootstrap.min.js',
     'libs/inputmask/inputmask.min.js',
+    'libs/select2/js/select2.min.js',
     // Init
     'js/src/main.js',
 ];

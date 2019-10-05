@@ -12,7 +12,7 @@ body {
     }
 
     button,
-    a{
+    a {
         outline: none !important;
     }
 
@@ -104,5 +104,9 @@ body {
 
     #setup-company {
         padding: 0 !important;
+    }
+
+    .color-blue {
+        color: $mainBlue !important;
     }
 }
