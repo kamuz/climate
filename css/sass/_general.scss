@@ -122,4 +122,27 @@ body {
     .color-green {
         color: $mainGreen !important;
     }
+
+    .alert {
+        &.alert-warning {
+            background-color: #FCF9E9;
+            border-color: #FCF9E9;
+            color: #474747;
+            padding: 24px;
+            font-size: 14px;
+
+            .icon-warning {
+                color: #f5be58;
+                margin-right: 40px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    font-size: 28px;
+                    top: -20px;
+                }
+            }
+
+        }
+    }
 }

@@ -1,6 +1,9 @@
 (function($) {
     $(function() {
-        
+
+        /**
+         * Top Menu
+         */
         $('nav ul li a:not(:only-child)').click(function(e) {
             $(this).siblings('.nav-dropdown').toggle();
             e.stopPropagation();
@@ -21,20 +24,41 @@
             console.log("close");
             $(this).parent().fadeOut();
         });
+
+        /**
+         * Next Slide inside modal
+         */
         $('.next-slide').click(function(e) {
             e.preventDefault();
             $(".carousel").carousel("next");
         });
+
+        /**
+         * Init mask for phone, credit card etc.
+         */
         $(":input").inputmask();
+        var clipboard = new ClipboardJS('.clipboard');
+
+        /**
+         * Copy to clipboard init
+         */
+        clipboard.on('success', function(event) {
+            console.log(event);
+            event.trigger.classList.add('copied');
+            window.setTimeout(function() {
+                event.trigger.classList.remove('copied');
+            }, 2000);
+        });
     });
 })(jQuery);
 
+/**
+ * Init Bootstrap validation
+ */
 (function() {
     'use strict';
     window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
         var validation = Array.prototype.filter.call(forms, function(form) {
             form.addEventListener('submit', function(event) {
                 if (form.checkValidity() === false) {

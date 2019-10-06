@@ -471,6 +471,22 @@
             }
         }
 
+        .api-keys {
+            .table {
+                th {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    border-top: none;
+                    border-bottom: 1px solid #dee2e6;
+                }
+
+                tr:last-child {
+                    td {
+                        border-bottom: 1px solid #dee2e6;
+                }
+            }
+        }
+
         .invoice {
             h3 {
                 font-size: 24px;
