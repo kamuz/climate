@@ -580,5 +580,17 @@
                 }
             }
         }
+
+        .setup-guide {
+            .main-content {
+                p, ul, ol{
+                    margin: 25px 0;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }

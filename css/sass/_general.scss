@@ -6,7 +6,9 @@ body {
         font-size: 34px;
     }
 
-    p {
+    p,
+    ul,
+    ol{
         font-weight: 300;
         font-size: 16px;
     }
@@ -23,6 +25,10 @@ body {
 
     hr {
         border-width: 2px;
+    }
+
+    strong {
+        font-weight: 700;
     }
 
     .padding-0 {

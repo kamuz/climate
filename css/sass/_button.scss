@@ -16,6 +16,10 @@
         border-color: $mainBlue;
     }
 
+    &.btn-light {
+        background-color: #e8e8e8;
+    }
+
     &.btn-outline-success {
         &:hover {
             background-color: #EAF7ED;
