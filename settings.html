@@ -113,8 +113,8 @@
             </div>
             <div class="col-md-12 my-profile">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link active" href="overview.html">Overview</a></li>
-                    <li class="nav-item"><a class="nav-link" href="settings.html">Settings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="settings.html">Settings</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
                     <li class="nav-item"><a class="nav-link" href="billing.html">Billing</a></li>
                 </ul>
@@ -122,14 +122,78 @@
             </div>
             <div class="col-md-12 my-profile mt-3">
                  <div class="row overview">
-                    <div class="col-md-6">
-                        <div class="mb-4">Total contributed to tree planting to date <strong>$500 USD</strong> <br>
-                        Autopay after <strong>$50</strong></div>
-                        <a href="#">View Billing History</a>
+                    <div class="col-md-5 mb-5">
+                        <h3 class="mb-4">H3. General information</h3>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="first-name">Company Name</label>
+                                <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="Nic's Trees">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputState">Country</label>
+                                <select id="inputState" class="form-control form-control-lg">
+                                    <option selected>Choose...</option>
+                                    <option>USA</option>
+                                    <option>Canada</option>
+                                    <option>United Kindom</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name">Address</label>
+                                <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="900 maple street">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control form-control-lg" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control form-control-lg">
+                                        <option selected>Choose</option>
+                                        <option>123</option>
+                                        <option>456</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control form-control-lg" id="inputZip">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg">Save</button>
+                        </form>
                     </div>
-                    <div class="col-md-6">
-                        <div class="mb-4">Visa ending in 4242 <img src="img/visa.png" alt="Visa" width="35"> <br>Expires 09/22</div>
-                        <a href="billing.html">Edit</a>
+                    <div class="col-md-5 offset-md-1 mb-5">
+                        <h3 class="mb-4">H3. Details</h3>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="first-name">Which best discribes your company?</label>
+                                <select id="inputState" class="form-control form-control-lg">
+                                    <option selected>Choose</option>
+                                    <option>One</option>
+                                    <option>Two</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name">How many people are in your oganization?</label>
+                                <select id="inputState" class="form-control form-control-lg">
+                                    <option selected>Choose</option>
+                                    <option>1</option>
+                                    <option>2-5</option>
+                                    <option>5-10</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="first-name">Age of your organization</label>
+                                <select id="inputState" class="form-control form-control-lg">
+                                    <option selected>Choose</option>
+                                    <option>Less 1 year</option>
+                                    <option>1-5 years</option>
+                                    <option>more than 5 years</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-light btn-lg">Save</button>
+                        </form>
                     </div>
                  </div>
             </div>
