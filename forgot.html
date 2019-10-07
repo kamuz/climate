@@ -24,12 +24,13 @@
                         <div class="col-md-12">
                             <h1>Password Recovery</h1>
                             <p>Don’t panic — we’ve got you covered. Enter the email address you use to sign in to Change for the Climate and we’ll send you instructions for resetting your password.</p>
-                            <form>
+                            <form class="needs-validation" novalidate>
                                 <div class="form-group">
                                     <label for="your-email">Your Email</label>
-                                    <input type="email" class="form-control form-control-lg" id="your-email" placeholder="me@example.com">
+                                    <input type="email" class="form-control form-control-lg" id="your-email" placeholder="me@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email address</div>
                                 </div>
-                                <button type="submit" class="btn btn-success btn-block btn-lg" disabled>Help Me</button>
+                                <button type="submit" class="btn btn-success btn-block btn-lg" >Help Me</button>
                                 <div class="help"><a href="login.html">Return to log in screen</a></div>
                             </form>
                         </div>
