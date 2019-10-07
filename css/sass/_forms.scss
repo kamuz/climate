@@ -50,6 +50,14 @@ body {
         background: url('../img/card-list.png') no-repeat 96% 15px;
     }
 
+    #show-card-number {
+        border-bottom: 0;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        background: url('../img/visa-small.png') no-repeat 15px 15px;
+        padding-left: 60px;
+    }
+
     #country-region {
         border-bottom: 0;
         border-bottom-right-radius: 0;
@@ -69,12 +77,13 @@ body {
         border-bottom-left-radius: 0;
     }
 
-    #zip-code {
+    #zip-code,
+    #expire-card {
         border-top-right-radius: 0;
         border-top-left-radius: 0;
     }
 
-    label[for="card-cvc"]{
+    label[for="card-cvc"] {
         position: absolute;
         right: 10px;
         top: 10px;
