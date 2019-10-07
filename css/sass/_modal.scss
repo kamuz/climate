@@ -1,6 +1,29 @@
 .modal {
     padding: 0 !important;
 
+    .modal-header {
+        border-bottom: 0;
+        padding: 0 1rem;
+
+        .close {
+            position: absolute;
+            right: 50px;
+            top: 30px;
+            font-size: 2rem !important;
+            font-weight: normal;
+            color: #000;
+            z-index: 1000;
+
+            .esc {
+                font-size: 14px;
+                font-weight: normal;
+                position: relative;
+                bottom: 6px;
+                color: #000;
+            }
+        }
+    }
+
     .modal-full {
         min-width: 100%;
         width: 100%;
@@ -13,29 +36,6 @@
             border-radius: 0;
             min-height: 100vh;
             border: none;
-
-            .modal-header {
-                border-bottom: 0;
-                padding: 0 1rem;
-
-                .close {
-                    position: absolute;
-                    right: 50px;
-                    top: 30px;
-                    font-size: 2rem !important;
-                    font-weight: normal;
-                    color: #000;
-                    z-index: 1000;
-
-                    .esc {
-                        font-size: 14px;
-                        font-weight: normal;
-                        position: relative;
-                        bottom: 6px;
-                        color: #000;
-                    }
-                }
-            }
 
             .modal-body {
                 overflow-y: auto;
@@ -94,6 +94,66 @@
             font-weight: normal;
             line-height: 1.8;
             margin-bottom: 30px;
+        }
+    }
+
+    &#edit-avatar {
+        @media (min-width: 576px) {
+            .modal-dialog {
+                max-width: 690px;
+                margin: 1.75rem auto;
+
+                .modal-content {
+                    border: none;
+
+                    .modal-header {
+                        padding: 22px;
+
+                        h5 {
+                            font-weight: normal;
+                            font-size: 18px;
+                            padding: 0;
+                        }
+
+                        .close {
+                            right: 22px;
+                            top: 20px;
+                        }
+                    }
+
+                    .modal-body {
+                        padding: 0;
+                    }
+
+                    .modal-footer {
+                        justify-content: space-between;
+
+                        .delete {
+                            font-size: 14px;
+                            color: #303030;
+                        }
+
+                        .btn {
+                            border-width: 2px;
+                            border-radius: 5px !important;
+                            height: 40px;
+                            line-height: 38px;
+                            padding: 0;
+                            width: 120px;
+                            font-weight: bold;
+
+                            &.replace {
+                                font-size: 14px;
+
+                                &:hover {
+                                    background-color: $mainGreen;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -1,0 +1,94 @@
+//=./inc/head.html
+
+<body class="app">
+    //=./inc/header.html
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12 my-profile mt-2">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="float-left mr-2 avatar">
+                        <div class="position-relative">
+                            <img src="img/avatar-473x473.png" width="80" height="80" alt="avatar">
+                            <div class="trim">
+                                <a href="#edit-avatar" role="button" data-toggle="modal" class="edit-avatar">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h1>H2. My Profile</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 my-profile">
+                <hr>
+            </div>
+            <div class="col-md-12 my-profile mt-3">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="mb-4">H3. General information</h3>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="last-name" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="your-email">Email</label>
+                                    <input type="email" class="form-control" id="your-email" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <button type="submit" class="btn btn-light btn-lg">Save</button>
+                            </form>
+                            <h3 class="mb-4 mt-5">H3. Password Reset</h3>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Verify current password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <div class="alert alert-danger mt-3" role="alert"><i class="icon-warning"></i><strong>Your passwords do not match.</strong> Please reenter a new password</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comfirm-password">New password</label>
+                                    <input type="password" class="form-control" id="comfirm-password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comfirm-password">Confirm new password</label>
+                                    <input type="password" class="form-control" id="comfirm-password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-light btn-lg">Update</button>
+                            </form>
+                            <form action="#" class="mt-4">
+                                <a href="#" class="gray-link">Delete Account</a>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="mb-4">H3. Messaging</h3>
+                            <form action="#">
+                                <div class="mb-3">Contact me via email when:</div>
+                                <div class="form-group mb-4">
+                                    <div class="mb-2">
+                                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                        <label for="styled-checkbox-1">Every time someone contributes to Change for the Climate</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked>
+                                        <label for="styled-checkbox-2">Weekly account summary</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                                        <label for="styled-checkbox-4">Periodic updates regarding the Change for the Climate Community</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-light btn-lg">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+//=./inc/modal-edit-avatar.html
+//=./inc/scripts.html
+//=./inc/footer.html

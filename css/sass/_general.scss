@@ -8,7 +8,7 @@ body {
 
     p,
     ul,
-    ol{
+    ol {
         font-weight: 300;
         font-size: 16px;
     }
@@ -130,6 +130,8 @@ body {
     }
 
     .alert {
+        font-size: 14px;
+
         &.alert-warning {
             background-color: #FCF9E9;
             border-color: #FCF9E9;
@@ -148,7 +150,86 @@ body {
                     top: -20px;
                 }
             }
+        }
 
+        &.alert-danger {
+            background-color: #fff5f0;
+            border-color: #fff5f0;
+            color: #474747;
+
+            .icon-warning {
+                color: #dc3522;
+                margin-right: 40px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    font-size: 28px;
+                    top: -20px;
+                }
+            }
+        }
+    }
+
+    .styled-checkbox {
+        position: absolute;
+        opacity: 0;
+        list-style-type: none;
+
+        &+label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        &+label:before {
+            content: '';
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: text-top;
+            width: 24px;
+            height: 24px;
+            background: white;
+            border: 2px solid #d1d1d1;
+            border-radius: 100%;
+        }
+
+        &:hover+label:before {
+            background: $mainGreen;
+            border-color: $mainGreen;
+        }
+
+        &:checked+label:before {
+            background: $mainGreen;
+            border-color: $mainGreen;
+        }
+
+        &:disabled+label {
+            color: #b8b8b8;
+            cursor: auto;
+        }
+
+        &:disabled+label:before {
+            box-shadow: none;
+            background: #ddd;
+        }
+
+        &:checked+label:after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 13px;
+            background: white;
+            width: 2px;
+            height: 2px;
+            box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+            transform: rotate(45deg);
         }
     }
 }

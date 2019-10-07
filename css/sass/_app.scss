@@ -592,5 +592,48 @@
                 }
             }
         }
+
+        .my-profile {
+            h3 {
+                font-size: 24px;
+            }
+
+            .btn[type="submit"] {
+                width: 80px;
+                height: 43px;
+                line-height: 43px;
+            }
+
+            .avatar {
+                .trim {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    overflow: hidden;
+                    width: 80px;
+                    height: 40px;
+
+                    .edit-avatar {
+                        border-radius: 100px;
+                        background: rgba(0, 0, 0, .5);
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        color: #fff;
+                        font-size: 10px;
+                        top: -40px;
+                        position: absolute;
+                        text-align: center;
+                        line-height: 120px;
+                        text-decoration: none;
+                        transition: all 0.5s;
+
+                        &:hover {
+                            background: rgba(0, 0, 0, .7);
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -20,6 +20,12 @@
         background-color: #e8e8e8;
     }
 
+    &.btn-green-white {
+        border: 2px solid $mainGreen;
+        background-color: #fff;
+        color: $mainGreen;
+    }
+
     &.btn-outline-success {
         &:hover {
             background-color: #EAF7ED;

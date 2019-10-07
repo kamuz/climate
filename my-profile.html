@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body class="app">
     <section class="navigation fixed-top">
         <div class="container-fluid">
@@ -96,45 +97,115 @@
     </section>
     <div class="container content">
         <div class="row">
-            <div class="col-md-12 api-keys mt-4">
-                <div class="row">
-                    <div class="col-2 filters">
-                        <ul class="nav flex-column">
-                            <li class="nav-item"><a class="nav-link" href="extentions.html">Extentions</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="api-keys.html">API Key</a></li>
-                        </ul>
+            <div class="col-md-12 my-profile mt-2">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="float-left mr-2 avatar">
+                        <div class="position-relative">
+                            <img src="img/avatar-473x473.png" width="80" height="80" alt="avatar">
+                            <div class="trim">
+                                <a href="#edit-avatar" role="button" data-toggle="modal" class="edit-avatar">Edit</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-10">
-                        <h1>H3. API Key</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem. Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed. <a href="#">Learn more about API authentication</a></p>
-                        <div class="alert alert-warning" role="alert"><i class="icon-warning"></i><strong>You better check yo self before you wreck yo self.</strong> 'Cause C-0-2 is bad for your health</div>
-                        <table class="table">
-                            <tr>
-                                <th>Name</th>
-                                <th>Token</th>
-                                <th>Last used</th>
-                                <th colspan="2">Created</th>
-                            </tr>
-                            <tr>
-                                <td><strong>Publishable key</strong></td>
-                                <td><span id="copy-public-key">C4C_live_54hIIEWQuioO3QSIJ3IIWLS34S</span> <a href="javascript:void(0)" class="icon-paste clipboard" data-clipboard-target="#copy-public-key"></a></td>
-                                <td>Aug, 23, 2019</td>
-                                <td>Sept, 12, 2019</td>
-                                <td><i class="icon-dots"></i></td>
-                            </tr>
-                            <tr>
-                                <td><strong>Secret key</strong></td>
-                                <td><span id="copy-privat-key">C4C_live_54hIIEWQuioO3QSIJ3IIWLS34S</span> <a href="javascript:void(0)" class="icon-paste clipboard" data-clipboard-target="#copy-privat-key"></td>
-                                <td>Aug, 23, 2019</td>
-                                <td>Sept, 12, 2019</td>
-                                <td><i class="icon-dots"></i></td>
-                            </tr>
-                        </table>
+                    <div class="col">
+                        <h1>H2. My Profile</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 my-profile">
+                <hr>
+            </div>
+            <div class="col-md-12 my-profile mt-3">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="mb-4">H3. General information</h3>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" class="form-control" id="last-name" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="your-email">Email</label>
+                                    <input type="email" class="form-control" id="your-email" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <button type="submit" class="btn btn-light btn-lg">Save</button>
+                            </form>
+                            <h3 class="mb-4 mt-5">H3. Password Reset</h3>
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Verify current password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <div class="alert alert-danger mt-3" role="alert"><i class="icon-warning"></i><strong>Your passwords do not match.</strong> Please reenter a new password</div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comfirm-password">New password</label>
+                                    <input type="password" class="form-control" id="comfirm-password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comfirm-password">Confirm new password</label>
+                                    <input type="password" class="form-control" id="comfirm-password" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-light btn-lg">Update</button>
+                            </form>
+                            <form action="#" class="mt-4">
+                                <a href="#" class="gray-link">Delete Account</a>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="mb-4">H3. Messaging</h3>
+                            <form action="#">
+                                <div class="mb-3">Contact me via email when:</div>
+                                <div class="form-group mb-4">
+                                    <div class="mb-2">
+                                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                        <label for="styled-checkbox-1">Every time someone contributes to Change for the Climate</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked>
+                                        <label for="styled-checkbox-2">Weekly account summary</label>
+                                    </div>
+                                    <div class="mb-2">
+                                        <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                                        <label for="styled-checkbox-4">Periodic updates regarding the Change for the Climate Community</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-light btn-lg">Save</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<div class="modal" id="edit-avatar" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Photo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="esc">Esc</span> <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex align-items-center" id="result">
+                <img src="img/edit-avatar.png" alt="edit">
+            </div>
+            <div class="modal-footer">
+                    <form action="#" class="float-left">
+                        <a href="#" class="delete">Delete Photo</a>
+                    </form>
+                    <form action="#" class="flaat-right text-right">
+                        <a href="#" class="btn btn-green-white replace mr-2 d-inline-block">Replace Photo</a><a href="#" class="btn btn-success save">Save Photo</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="js/main.min.js"></script>
 </body>
 </html>
