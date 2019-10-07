@@ -583,7 +583,10 @@
 
         .setup-guide {
             .main-content {
-                p, ul, ol{
+
+                p,
+                ul,
+                ol {
                     margin: 25px 0;
                 }
 
@@ -624,7 +627,7 @@
                         top: -40px;
                         position: absolute;
                         text-align: center;
-                        line-height: 120px;
+                        line-height: 110px;
                         text-decoration: none;
                         transition: all 0.5s;
 
@@ -632,6 +635,26 @@
                             background: rgba(0, 0, 0, .7);
                         }
                     }
+                }
+            }
+
+            .nav-link {
+                padding: 0 20px 0 0;
+                font-weight: normal;
+                color: #000;
+
+                &.active,
+                &:hover {
+                    color: $mainGreen;
+                }
+            }
+
+            .overview {
+                img[alt="Visa"] {
+                    display: inline-block;
+                    margin-left: 20px;
+                    position: relative;
+                    top: -3px;
                 }
             }
         }

@@ -13,6 +13,9 @@
     - [API Keys](https://kamuz.github.io/climate/api-keys.html)
     - [Setup Guide](https://kamuz.github.io/climate/setup-guide.html)
 - [My Profile](https://kamuz.github.io/climate/my-profile.html)
+- [Overview](https://kamuz.github.io/climate/overview.html)
+    - [Settings](https://kamuz.github.io/climate/settings.html)
+    - [Billing](https://kamuz.github.io/climate/billing.html)
 
 Install Node.js, NPM and Gulp CLI:
 
