@@ -17,7 +17,6 @@
     }
 
     .sign-up {
-
         div,
         p {
             font-size: 14px;
@@ -39,16 +38,8 @@
             margin-bottom: 30px;
 
             a {
-                text-align: center;
-
                 .circle {
                     margin: 0 auto 20px;
-                }
-
-                .justify-content-between {
-                    &:after {
-                        display: none;
-                    }
                 }
             }
         }
@@ -135,6 +126,23 @@
 }
 
 @media screen and (max-width: 576px) {
+    .index {
+        .icon {
+            margin-bottom: 15px;
+        }
+
+        .choose-goal {
+            a {
+                text-align: center;
+            }
+
+            .justify-content-between {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {

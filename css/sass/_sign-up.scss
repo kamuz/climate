@@ -25,30 +25,18 @@
             text-align: center;
             font-size: 16px;
             color: #757575;
-            padding: 20px 0 10px;
             display: block;
             position: relative;
+            top: 27px;
+            width: 220px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
 
-            &:before {
-                content: '';
-                display: block;
-                width: 170px;
-                border-top: 1px solid $btnGrayBg;
-                position: absolute;
-                top: 33px;
-                left: 0;
+        hr {
+            &.thin {
+                margin-bottom: 40px;
             }
-
-            &:after {
-                content: '';
-                display: block;
-                width: 170px;
-                border-top: 1px solid $btnGrayBg;
-                position: absolute;
-                top: 33px;
-                right: 0;
-            }
-
         }
 
         .help{
