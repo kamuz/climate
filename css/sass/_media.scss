@@ -1,5 +1,4 @@
-@media screen and (max-width: 1200px) {
-
+@media screen and (min-width: 992px) {
     .index .container-fluid,
     .sign-up .container-fluid {
         padding: 0 0 0 30px;
@@ -12,6 +11,44 @@
             .row {
                 &>.col-lg-4 {
                     display: none;
+                }
+            }
+        }
+    }
+
+    .sign-up {
+
+        div,
+        p {
+            font-size: 14px;
+        }
+
+        header {
+            margin: 50px 0 28px;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .choose-goal {
+            margin-bottom: 30px;
+
+            a {
+                text-align: center;
+
+                .circle {
+                    margin: 0 auto 20px;
+                }
+
+                .justify-content-between {
+                    &:after {
+                        display: none;
+                    }
                 }
             }
         }
@@ -94,44 +131,6 @@
 
     .show-mobile {
         display: block !important;
-    }
-
-    .sign-up {
-
-        div,
-        p {
-            font-size: 14px;
-        }
-
-        header {
-            margin: 50px 0 28px;
-
-            img {
-                margin: 0 auto;
-            }
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .choose-goal {
-            margin-bottom: 30px;
-
-            a {
-                text-align: center;
-
-                .circle {
-                    margin: 0 auto 20px;
-                }
-
-                .justify-content-between {
-                    &:after {
-                        display: none;
-                    }
-                }
-            }
-        }
     }
 }
 
