@@ -62,8 +62,15 @@
     .navigation {
         height: 85px;
 
+        .container-fluid {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .brand {
             padding-top: 21px;
+            height: 85px;
+            padding-left: 20px;
         }
 
         .nav-mobile {
@@ -72,11 +79,9 @@
         }
 
         .nav-container {
-            position: absolute;
             width: 100%;
             left: 0;
             top: 20px;
-            height: calc(100vh - 84px);
 
             nav {
                 width: 100%;
@@ -84,7 +89,7 @@
 
                 &.show {
                     background-color: #fff;
-                    height: 100%;
+                    height: calc(100vh - 85px);
                 }
 
                 .col-lg-6 {
@@ -151,6 +156,10 @@
 
                                     &:last-child {
                                         border: none;
+
+                                        a {
+                                            color: $btnGrayColor;
+                                        }
                                     }
 
                                     &:hover,
@@ -181,6 +190,10 @@
                                     h3 {
                                         font-size: 16px;
                                     }
+
+                                    .dismiss-all {
+                                        right: 15px;
+                                    }
                                 }
                             }
 
@@ -197,6 +210,57 @@
             position: static;
         }
     }
+
+    .app {
+        .content {
+            padding-top: 0;
+
+            .progress-wrap {
+                margin-top: 20px;
+
+                .float-right {
+                    width: 100%;
+                    float: none !important;
+                }
+            }
+
+            .setup-items {
+                .card {
+                    flex: unset;
+                    border: 1px solid rgba(0, 0, 0, .125);
+                    border-bottom: 0;
+                    border-radius: 0;
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        border-right: 0;
+                    }
+
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        border-bottom: 1px solid rgba(0, 0, 0, .125);
+                    }
+
+                    &:nth-child(1) {
+                        border-top-left-radius: 8px;
+                    }
+
+                    &:nth-child(2) {
+                        border-top-right-radius: 8px;
+                    }
+
+                    &:nth-child(3) {
+                        border-bottom-left-radius: 8px;
+                    }
+
+                    &:nth-child(4) {
+                        border-bottom-right-radius: 8px;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -206,6 +270,119 @@
 
     .show-mobile {
         display: block !important;
+    }
+
+    .app {
+        .content {
+            .setup-items {
+                .card {
+                    border: 1px solid rgba(0, 0, 0, .125) !important;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .filters {
+                h3 {
+                    margin-bottom: 20px;
+                }
+
+                ul {
+                    border-bottom: 2px solid #dee2e6;
+                    margin-bottom: 20px;
+
+                    li {
+                        display: inline-block;
+                        width: 33.333%;
+                        text-align: center;
+
+                        a {
+                            padding: 0 0 12px 0;
+
+                            &:before {
+                                display: none;
+                            }
+
+                            &.active {
+                                &:after {
+                                    content: '';
+                                    width: 100%;
+                                    height: 4px;
+                                    position: absolute;
+                                    background-color: $mainGreen;
+                                    left: 0;
+                                    bottom: -2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .table {
+
+                &.pending,
+                &.scheduled,
+                &.planted {
+                    tbody {
+                        .trees-badges {
+                            margin-top: 20px;
+                            display: block;
+
+                            .badge {
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                margin-right: 2px;
+
+                                &.badge-success {
+                                    background: none;
+                                    border: 1px solid $mainGreen;
+                                    color: $mainGreen;
+                                }
+
+                                &.badge-primary {
+                                    background: none;
+                                    border: 1px solid $mainBlue;
+                                    color: $mainBlue;
+                                }
+
+                                &.badge-secondary {
+                                    background: none;
+                                    border: 1px solid #a3a3a3;
+                                    color: #a3a3a3;
+                                }
+                            }
+                        }
+
+                        td {
+                            &:nth-child(2) {
+                                font-size: 14px;
+
+                                h3 {
+                                    font-size: 14px;
+                                    font-weight: 900;
+                                    line-height: 1.5;
+                                }
+                            }
+
+                            &:nth-child(3),
+                            &:nth-child(4) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer {
+            font-size: 12px;
+
+            .icon-tree {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -223,6 +400,80 @@
             .justify-content-between {
                 &:after {
                     display: none;
+                }
+            }
+        }
+    }
+
+    .app {
+        .content {
+            .top-buttons {
+                display: flex;
+                justify-content: space-between;
+
+                .btn {
+                    width: 48%;
+                    padding: 0;
+                    margin-top: 20px;
+                }
+            }
+
+            .account-details {
+                flex-wrap: wrap;
+                text-align: center;
+
+                .float-left {
+                    width: 100%;
+                    float: none !important;
+
+                    img {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .accout-stats {
+                margin-top: 15px;
+
+                .card {
+                    margin-bottom: 0;
+                    border-radius: 0;
+                    border-bottom: 0;
+                    text-align: left;
+
+                    &:nth-child(1) {
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                    }
+
+                    &:nth-child(3) {
+                        border-bottom: 1px solid rgba(0, 0, 0, .125);
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                    }
+
+                    .card-body {
+                        padding-left: 20px;
+                        justify-content: flex-start !important;
+
+                        .float-left:nth-child(1) {
+                            width: 60px;
+                        }
+
+                        .float-left:nth-child(2) {
+                            width: 80%;
+
+                            h3,
+                            p {
+                                display: inline-block;
+                            }
+
+                            h3 {
+                                font-size: 24px;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
                 }
             }
         }

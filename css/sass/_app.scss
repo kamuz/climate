@@ -2,7 +2,7 @@
     padding-top: 120px;
 
     .content {
-        padding: 35px 0;
+        padding-top: 35px;
 
         .account-details {
             p {
@@ -35,12 +35,16 @@
                         margin: 30px auto 0;
                     }
 
-                    button {
-                        width: 140px;
-                        font-weight: bold;
-                        font-size: 16px;
-                        height: 43px;
-                        margin-top: 35px;
+                    a {
+                        &.btn {
+                            width: 140px;
+                            font-weight: bold;
+                            font-size: 16px;
+                            height: 43px;
+                            line-height: 43px;
+                            padding: 0;
+                            margin-top: 35px;
+                        }
                     }
 
                     .icon-okay {
@@ -157,7 +161,11 @@
 
             ul {
                 li {
+                    display: block;
+                    width: 100%;
+
                     a {
+                        font-weight: normal;
                         color: $btnGrayColor;
                         padding: .3rem 1rem;
                         position: relative;
@@ -196,6 +204,10 @@
         .table {
             color: $btnGrayColor;
 
+            .trees-badges {
+                display: none;
+            }
+
             thead {
                 th {
                     border-top: none;
@@ -228,6 +240,8 @@
                         h3 {
                             color: $mainGreen;
                             margin-bottom: 2px;
+                            font-size: 16px;
+                            font-weight: 900;
 
                             .badge {
                                 font-size: 10px;
@@ -465,8 +479,6 @@
                             padding: 0;
                             width: 142px;
                         }
-
-                        .read-more {}
                     }
                 }
 

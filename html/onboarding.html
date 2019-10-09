@@ -3,13 +3,13 @@
     //=./inc/header.html
     <div class="container content">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-5">
                 <h1>Dashboard</h1>
             </div>
-            <div class="col-md-6">
-                <div class="float-right top-buttons">
-                    <button class="btn btn-lg br-5 btn-outline-success mr-2" href="#claim-trees" role="button" data-toggle="modal">Claim Trees</button>
-                    <button class="btn btn-lg br-5 btn-success" href="#plant-trees" role="button" data-toggle="modal">Plant Trees</button>
+            <div class="col-md-6 col-sm-7">
+                <div class="text-right top-buttons">
+                    <a class="btn btn-lg br-5 btn-outline-success mr-2" href="#claim-trees" role="button" data-toggle="modal">Claim Trees</a>
+                    <a class="btn btn-lg br-5 btn-success" href="#plant-trees" role="button" data-toggle="modal">Plant Trees</a>
                 </div>
             </div>
             <div class="col-md-12">
@@ -23,7 +23,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-12 progress-wrap">
                         <div class="float-right">
                             <div class="setup-account mb-2">Business Account Setup <strong>0% Complete</strong></div>
                             <div class="progress">
@@ -35,43 +35,43 @@
             </div>
             <div class="col-md-12">
                 <div class="card-group setup-items mt-5">
-                    <div class="card col-md-3">
+                    <div class="card col-lg-3 col-md-6">
                         <div class="card-body">
                             <h3 class="card-title">Company Set up</h3>
                             <div>
                                 <img class="card-img-top" src="img/150x150.png" alt="Card image cap">
                             </div>
-                            <p class="card-text"><button href="#setup-company" role="button" class="btn btn-primary" data-toggle="modal">Go</button></p>
+                            <p class="card-text"><a href="#setup-company" role="button" class="btn btn-primary" data-toggle="modal">Go</a></p>
                             <p class="card-text text-muted">Why do I need to do this?</p>
                         </div>
                     </div>
-                    <div class="card col-md-3">
+                    <div class="card col-lg-3 col-md-6">
                         <div class="card-body">
                             <h3 class="card-title">Choose an Extension</h3>
                             <div>
                                 <img class="card-img-top" src="img/150x150.png" alt="Card image cap">
                             </div>
-                            <p class="card-text"><button class="btn btn-primary">Go</button></p>
+                            <p class="card-text"><a href="#" class="btn btn-primary">Go</a></p>
                             <p class="card-text text-muted">Why do I need to do this?</p>
                         </div>
                     </div>
-                    <div class="card col-md-3">
+                    <div class="card col-lg-3 col-md-6">
                         <div class="card-body">
                             <h3 class="card-title">Get Your API Key</h3>
                             <div>
                                 <img class="card-img-top" src="img/150x150.png" alt="Card image cap">
                             </div>
-                            <p class="card-text"><button class="btn btn-primary">Go</button></p>
+                            <p class="card-text"><a href="#" class="btn btn-primary">Go</a></p>
                             <p class="card-text text-muted">Why do I need to do this?</p>
                         </div>
                     </div>
-                    <div class="card col-md-3">
+                    <div class="card col-lg-3 col-md-6">
                         <div class="card-body">
                             <h3 class="card-title">Enter Billing Information</h3>
                             <div>
                                 <img class="card-img-top" src="img/150x150.png" alt="Card image cap">
                             </div>
-                            <p class="card-text"><button href="#billing-information" role="button" class="btn btn-primary" data-toggle="modal">Go</button></p>
+                            <p class="card-text"><a href="#billing-information" role="button" class="btn btn-primary" data-toggle="modal">Go</a></p>
                             <p class="card-text text-muted">Why do I need to do this?</p>
                         </div>
                     </div>
@@ -119,17 +119,17 @@
             </div>
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-3 filters">
+                    <div class="col-md-3 filters">
                         <h3>View by</h3>
-                        <ul class="nav flex-column">
+                        <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">All</a>
+                                <a class="nav-link active" href="#">All Trees</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">My Trees</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Customer Trees</a>
+                                <a class="nav-link" href="#">Customers</a>
                             </li>
                         </ul>
                     </div>
@@ -142,13 +142,17 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX33 <span class="badge badge-light">Pending</span></h3>
                                         <div class="user-name">Barry's Yoga Pagoda</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-success">My trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-success">My trees</span>
@@ -164,13 +168,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX32 <span class="badge badge-light">Pending</span></h3>
                                         <div class="user-name">Judy's Juice-Topia</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-success">My trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-success">My trees</span>
@@ -186,13 +194,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX31 <span class="badge badge-light">Pending</span></h3>
                                         <div class="user-name">Karl's Kapital</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-primary">Customer trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-primary">Customer trees</span>
@@ -217,13 +229,17 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX33 <span class="badge badge-secondary">Scheduled</span></h3>
                                         <div class="user-name">Barry's Yoga Pagoda</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-success">My trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-success">My trees</span>
@@ -239,13 +255,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX32 <span class="badge badge-secondary">Scheduled</span></h3>
                                         <div class="user-name">Judy's Juice-Topia</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-success">My trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-success">My trees</span>
@@ -261,13 +281,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX31 <span class="badge badge-secondary">Scheduled</span></h3>
                                         <div class="user-name">Karl's Kapital</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-primary">Customer trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-primary">Customer trees</span>
@@ -292,13 +316,17 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX33 <span class="badge badge-success">Planted</span></h3>
                                         <div class="user-name">Barry's Yoga Pagoda</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-success">My trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-success">My trees</span>
@@ -314,13 +342,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX32 <span class="badge badge-success">Planted</span></h3>
                                         <div class="user-name">Judy's Juice-Topia</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-success">My trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-success">My trees</span>
@@ -336,13 +368,17 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row">
+                                    <td>
                                         <i class="icon-tree"></i>
                                     </td>
                                     <td>
                                         <h3>Transaction #45j55LX31 <span class="badge badge-success">Planted</span></h3>
                                         <div class="user-name">Karl's Kapital</div>
                                         <div class="received-date">Received Fri, August 16th 12:00 PM</div>
+                                        <div class="trees-badges">
+                                            <span class="badge badge-primary">Customer Trees</span>
+                                            <span class="badge badge-secondary">20 Trees</span>
+                                        </div>
                                     </td>
                                     <td>
                                         <span class="badge badge-primary">Customer trees</span>
@@ -373,5 +409,5 @@
 //=./inc/modal-billing-information.html
 //=./inc/modal-claim-trees.html
 //=./inc/modal-plant-trees.html
-//=./inc/scripts.html
 //=./inc/footer.html
+//=./inc/scripts.html
