@@ -1,11 +1,10 @@
 //=./inc/head.html
-
 <body class="app">
     //=./inc/header.html
     <div class="container content">
         <div class="row">
             <div class="col-md-12 my-profile mt-2">
-                <div class="d-flex align-items-center mb-4">
+                <div class="d-flex align-items-center mb-4 headline">
                     <div class="float-left mr-2 avatar">
                         <div class="position-relative">
                             <img src="img/avatar-473x473.png" width="80" height="80" alt="avatar">
@@ -25,20 +24,20 @@
             <div class="col-md-12 my-profile mt-3">
                 <div class="main-content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-4">
                             <h3 class="mb-4">H3. General information</h3>
                             <form action="#">
                                 <div class="form-group">
                                     <label for="first-name">First Name</label>
-                                    <input type="text" class="form-control" id="first-name" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="text" class="form-control" id="first-name" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
                                     <label for="last-name">Last Name</label>
-                                    <input type="text" class="form-control" id="last-name" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="text" class="form-control" id="last-name" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
                                     <label for="your-email">Email</label>
-                                    <input type="email" class="form-control" id="your-email" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="your-email" placeholder="Enter email">
                                 </div>
                                 <button type="submit" class="btn btn-light btn-lg">Save</button>
                             </form>
@@ -50,12 +49,12 @@
                                     <div class="alert alert-danger mt-3" role="alert"><i class="icon-warning"></i><strong>Your passwords do not match.</strong> Please reenter a new password</div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="comfirm-password">New password</label>
-                                    <input type="password" class="form-control" id="comfirm-password" placeholder="Password">
+                                    <label for="new-password">New password</label>
+                                    <input type="password" class="form-control" id="new-password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <label for="comfirm-password">Confirm new password</label>
-                                    <input type="password" class="form-control" id="comfirm-password" placeholder="Password">
+                                    <label for="confirm-password">Confirm new password</label>
+                                    <input type="password" class="form-control" id="confirm-password" placeholder="Password">
                                 </div>
                                 <button type="submit" class="btn btn-light btn-lg">Update</button>
                             </form>
@@ -90,5 +89,5 @@
         </div>
     </div>
 //=./inc/modal-edit-avatar.html
-//=./inc/scripts.html
 //=./inc/footer.html
+//=./inc/scripts.html
