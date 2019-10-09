@@ -392,11 +392,15 @@
                 }
             }
 
-            .extentions {
+            .extentions,
+            .setup-guide {
+                margin-top: 0;
+
                 h1 {
                     font-size: 18px;
                     margin: 10px 0;
                 }
+
                 .filters {
                     ul {
                         li {
@@ -609,6 +613,31 @@
 
                     .qty-trees {
                         margin-left: 30px;
+                    }
+                }
+            }
+
+            .setup-guide {
+                .headline {
+                    flex-wrap: wrap;
+                    text-align: center;
+
+                    .float-left,
+                    .col,
+                    .col-auto {
+                        width: 100%;
+
+                        img {
+                            width: 120px;
+                        }
+
+                        .btn {
+                            width: 100%;
+                            font-size: 14px;
+                            height: 40px;
+                            line-height: 40px;
+                            padding: 0;
+                        }
                     }
                 }
             }
