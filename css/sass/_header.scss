@@ -348,6 +348,29 @@
                             &:last-child {
                                 border: none;
                             }
+
+                            &.active {
+                                background-color: #DCF0DD;
+
+                                &:before {
+                                    content: "\e912";
+                                    font-family: 'icomoon' !important;
+                                    speak: none;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-variant: normal;
+                                    text-transform: none;
+                                    line-height: 1;
+                                    display: inline-block;
+                                    -webkit-font-smoothing: antialiased;
+                                    -moz-osx-font-smoothing: grayscale;
+                                    position: absolute;
+                                    color: $mainGreen;
+                                    right: 15px;
+                                    top: 10px;
+                                    font-size: 25px;
+                                }
+                            }
                         }
                     }
                 }

@@ -154,12 +154,14 @@
                                         font-size: 18px;
                                     }
 
-                                    &:last-child {
-                                        border: none;
-
+                                    &.logout {
                                         a {
                                             color: $btnGrayColor;
                                         }
+                                    }
+
+                                    &:last-child {
+                                        border: none;
                                     }
 
                                     &:hover,
@@ -213,7 +215,7 @@
 
     .app {
         .content {
-            padding-top: 0;
+            padding: 0 25px;
 
             .progress-wrap {
                 margin-top: 20px;
