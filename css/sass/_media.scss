@@ -420,7 +420,7 @@
                 }
             }
 
-            .account-details{
+            .account-details {
                 flex-wrap: wrap;
                 text-align: center;
 
@@ -449,12 +449,13 @@
                 }
 
                 .col,
-                .col-auto{
+                .col-auto {
                     width: 100% !important;
                     display: block;
                     flex: unset;
 
-                    div, p {
+                    div,
+                    p {
                         margin-bottom: 10px;
                     }
                 }
@@ -512,6 +513,27 @@
 
             .load-more {
                 margin-top: 0;
+            }
+
+            .history {
+                flex-wrap: wrap;
+                text-align: center;
+
+                .float-left,
+                .col,
+                .col-auto {
+                    width: 100%;
+
+                    h1 {
+                        margin-top: 20px;
+                        font-size: 24px;
+                    }
+
+                    .btn{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
             }
         }
     }
