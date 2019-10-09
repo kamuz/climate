@@ -4,9 +4,17 @@
     .sign-up .container-fluid {
         padding: 0 0 0 30px;
     }
+
+    .nav-list {
+        display: block !important;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .container {
+        max-width: unset;
+    }
+
     .sign-up {
         .container-fluid {
             .row {
@@ -655,120 +663,131 @@
                     }
                 }
             }
-        }
 
-        .api-keys {
+            .api-keys {
 
-            table,
-            tbody,
-            td,
-            tr {
-                display: block;
-                width: 100%;
-            }
-
-            th {
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
-            }
-
-            tr {
-                border-bottom: 2px solid #eee;
-            }
-
-            tr:first-child {
-                border-top: 1px solid #eee;
-            }
-
-            td {
-                border: none;
-                border-bottom: 1px solid #eee !important;
-                position: relative;
-                padding: 0 !important;
-                padding-left: 35% !important;
-                line-height: 40px !important;
-                height: 40px !important;
-                overflow: hidden;
-
-                a.clipboard {
-                    position: absolute !important;
-                    right: 21px;
-                    top: 24px;
-
-                    &:before {
-                        background-color: #fff;
-                    }
-                }
-
-                .icon-dots {
-                    line-height: 40px;
-                }
-            }
-
-            td:before {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 35%;
-                padding-right: 10px;
-                white-space: nowrap;
-                text-transform: uppercase;
-                font-weight: bold;
-                text-align: left;
-                font-size: 12px;
-                color: #a3a3a3;
-            }
-
-            td:nth-of-type(1):before {
-                content: "Name";
-            }
-
-            td:nth-of-type(2):before {
-                content: "Token";
-            }
-
-            td:nth-of-type(3):before {
-                content: "Last Used";
-            }
-
-            td:nth-of-type(4):before {
-                content: "Created";
-            }
-
-            td:nth-of-type(5):before {
-                content: "Roll Key";
-            }
-        }
-
-        .my-profile {
-            .headline {
-                flex-wrap: wrap;
-                margin-bottom: 0 !important;
-
-                .float-left,
-                .col {
+                table,
+                tbody,
+                td,
+                tr {
+                    display: block;
                     width: 100%;
-                    text-align: center;
+                }
 
-                    .position-relative {
-                        width: 80px;
-                        margin: 0 auto 20px;
+                th {
+                    position: absolute;
+                    top: -9999px;
+                    left: -9999px;
+                }
+
+                tr {
+                    border-bottom: 2px solid #eee;
+                }
+
+                tr:first-child {
+                    border-top: 1px solid #eee;
+                }
+
+                td {
+                    border: none;
+                    border-bottom: 1px solid #eee !important;
+                    position: relative;
+                    padding: 0 !important;
+                    padding-left: 35% !important;
+                    line-height: 40px !important;
+                    height: 40px !important;
+                    overflow: hidden;
+
+                    a.clipboard {
+                        position: absolute !important;
+                        right: 21px;
+                        top: 24px;
+
+                        &:before {
+                            background-color: #fff;
+                        }
+                    }
+
+                    .icon-dots {
+                        line-height: 40px;
+                    }
+                }
+
+                td:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 35%;
+                    padding-right: 10px;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    text-align: left;
+                    font-size: 12px;
+                    color: #a3a3a3;
+                }
+
+                td:nth-of-type(1):before {
+                    content: "Name";
+                }
+
+                td:nth-of-type(2):before {
+                    content: "Token";
+                }
+
+                td:nth-of-type(3):before {
+                    content: "Last Used";
+                }
+
+                td:nth-of-type(4):before {
+                    content: "Created";
+                }
+
+                td:nth-of-type(5):before {
+                    content: "Roll Key";
+                }
+            }
+
+            .my-profile {
+                .headline {
+                    flex-wrap: wrap;
+                    margin-bottom: 0 !important;
+
+                    .float-left,
+                    .col {
+                        width: 100%;
+                        text-align: center;
+
+                        .position-relative {
+                            width: 80px;
+                            margin: 0 auto 20px;
+                        }
+                    }
+                }
+
+                .nav {
+                    li {
+                        width: 33.3333%;
+                        display: inline-block;
+                        text-align: center;
+
+                        a {
+                            position: relative;
+                            &.active {
+                                &:after {
+                                    content: '';
+                                    width: 100%;
+                                    height: 4px;
+                                    position: absolute;
+                                    background-color: $mainGreen;
+                                    left: 0;
+                                    bottom: -18px;
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .container {
-        max-width: unset;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .nav-list {
-        display: block !important;
     }
 }
