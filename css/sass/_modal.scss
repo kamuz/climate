@@ -7,8 +7,8 @@
 
         .close {
             position: absolute;
-            right: 50px;
-            top: 30px;
+            right: 20px;
+            top: 10px;
             font-size: 2rem !important;
             font-weight: normal;
             color: #000;
@@ -82,6 +82,12 @@
         }
     }
 
+    &#claim-trees {
+        .fields {
+            flex-wrap: nowrap;
+        }
+    }
+
     &#plant-trees {
         .btn-lg {
             height: 43px;
@@ -146,57 +152,122 @@
     }
 
     &#edit-avatar {
-        @media (min-width: 576px) {
-            .modal-dialog {
-                max-width: 690px;
-                margin: 1.75rem auto;
+        .modal-dialog {
+            max-width: 690px;
+            margin: 1.75rem auto;
 
-                .modal-content {
-                    border: none;
+            .modal-content {
+                border: none;
 
-                    .modal-header {
-                        padding: 22px;
+                .modal-header {
+                    padding: 22px;
 
-                        h5 {
-                            font-weight: normal;
-                            font-size: 18px;
-                            padding: 0;
-                        }
-
-                        .close {
-                            right: 22px;
-                            top: 20px;
-                        }
-                    }
-
-                    .modal-body {
+                    h5 {
+                        font-weight: normal;
+                        font-size: 18px;
                         padding: 0;
                     }
 
-                    .modal-footer {
-                        justify-content: space-between;
+                    .close {
+                        right: 22px;
+                        top: 20px;
+                    }
+                }
 
-                        .delete {
-                            font-size: 14px;
-                            color: #303030;
-                        }
+                .modal-body {
+                    background-color: #000;
+                    padding: 20px 0 0;
 
-                        .btn {
-                            border-width: 2px;
-                            border-radius: 5px !important;
-                            height: 40px;
-                            line-height: 38px;
-                            padding: 0;
-                            width: 120px;
-                            font-weight: bold;
+                    .icon-undo {
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                        color: #fff;
+                        font-size: 24px;
+                    }
 
-                            &.replace {
-                                font-size: 14px;
+                    .info {
+                        color: #fff;
+                        font-size: 12px;
+                        margin: 15px 0;
+                    }
 
-                                &:hover {
-                                    background-color: $mainGreen;
-                                    color: #fff;
+                    .sliders {
+                        border-top: 1px solid #303030;
+
+                        .slidecontainer {
+                            width: 100%;
+                            padding: 20px 0;
+
+                            &.zoom-slider {
+                                padding-left: 20px;
+                            }
+
+                            &.straighten-slider {
+                                padding-right: 20px;
+                            }
+
+                            label {
+                                color: #fff;
+                                font-size: 12px;
+                                display: block;
+                                text-align: left;
+                            }
+
+                            .slider {
+                                -webkit-appearance: none;
+                                width: 100%;
+                                height: 3px;
+                                background: #fff;
+                                outline: none;
+                                -webkit-transition: .2s;
+                                transition: opacity .2s;
+
+                                &::-webkit-slider-thumb {
+                                    -webkit-appearance: none;
+                                    appearance: none;
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 20px;
+                                    background: #dadada;
+                                    cursor: pointer;
                                 }
+
+                                &::-moz-range-thumb {
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 20px;
+                                    background: #dadada;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .modal-footer {
+                    justify-content: space-between;
+
+                    .delete {
+                        font-size: 14px;
+                        color: #303030;
+                    }
+
+                    .btn {
+                        border-width: 2px;
+                        border-radius: 5px !important;
+                        height: 40px;
+                        line-height: 38px;
+                        padding: 0;
+                        width: 80px;
+                        font-weight: bold;
+
+                        &.replace {
+                            font-size: 14px;
+
+                            &:hover {
+                                background-color: $mainGreen;
+                                color: #fff;
                             }
                         }
                     }

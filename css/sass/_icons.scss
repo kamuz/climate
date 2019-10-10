@@ -1,10 +1,9 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?hibezo');
-  src:  url('../fonts/icomoon.eot?hibezo#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?hibezo') format('truetype'),
-    url('../fonts/icomoon.woff?hibezo') format('woff'),
-    url('../fonts/icomoon.svg?hibezo#icomoon') format('svg');
+  src:
+    url('../fonts/icomoon.ttf?p2v3fz') format('truetype'),
+    url('../fonts/icomoon.woff?p2v3fz') format('woff'),
+    url('../fonts/icomoon.svg?p2v3fz#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -18,57 +17,57 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  display: inline-block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
 }
 
-.icon-paste:before {
+.icon-pencil:before {
   content: "\e900";
 }
-.icon-plane:before {
+.icon-trash:before {
   content: "\e901";
 }
-.icon-question:before {
+.icon-cloud-upload:before {
   content: "\e902";
 }
-.icon-ruler:before {
+.icon-paste:before {
   content: "\e903";
 }
-.icon-spray:before {
+.icon-plane:before {
   content: "\e904";
 }
-.icon-tree:before {
+.icon-question:before {
   content: "\e905";
 }
-.icon-undo:before {
+.icon-ruler:before {
   content: "\e906";
 }
-.icon-warning:before {
+.icon-spray:before {
   content: "\e907";
 }
-.icon-arrow-down:before {
+.icon-tree:before {
   content: "\e908";
 }
-.icon-arrow-left:before {
+.icon-undo:before {
   content: "\e909";
 }
-.icon-circle:before {
+.icon-warning:before {
   content: "\e90a";
 }
-.icon-close:before {
+.icon-arrow-left:before {
   content: "\e90b";
 }
-.icon-cloud:before {
+.icon-close:before {
   content: "\e90c";
 }
-.icon-cvv:before {
+.icon-cloud:before {
   content: "\e90d";
 }
-.icon-dots:before {
+.icon-cvv:before {
   content: "\e90e";
 }
-.icon-facebook:before {
+.icon-dots:before {
   content: "\e90f";
 }
 .icon-lock:before {
@@ -79,7 +78,4 @@
 }
 .icon-okay:before {
   content: "\e912";
-}
-.icon-okay-circle:before {
-  content: "\e913";
 }

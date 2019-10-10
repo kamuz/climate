@@ -38,7 +38,7 @@
                                                     <span class="email">nic@example.com</span>
                                                 </div>
                                                 <div class="float-right">
-                                                    <span class="notification-count">6</span>
+                                                    <span class="notification-count">10</span>
                                                     <span class="avatar"><img src="img/avatar.png" width="49" height="49" alt="User Avatar"></span>
                                                 </div>
                                             </a>
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="nav-mobile"><a id="nav-toggle" href="#"><span></span></a></div>
+        <div class="nav-mobile"><a id="nav-toggle" href="#"><span class="toggle-button"></span><span class="notification-count">10</span></a></div>
     </section>
     <div class="container content">
         <div class="row">
@@ -189,15 +189,33 @@
                     <span class="esc">Esc</span> <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body d-flex align-items-center" id="result">
-                <img src="img/edit-avatar.png" alt="edit">
+            <div class="modal-body text-center position-relative" id="result">
+                <a href="javascript:void(0)" class="icon-undo"></a>
+                <img src="img/avatar-crop.png" alt="edit">
+                <div class="info">Drage to reposition photo</div>
+                    <div class="sliders">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="slidecontainer zoom-slider">
+                            <label for="zoom">Zoom</label>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="zoom">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="slidecontainer straighten-slider">
+                            <label for="straighten">Straighten</label>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="straighten">
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <form action="#" class="float-left">
                     <a href="#" class="delete">Delete Photo</a>
                 </form>
                 <form action="#" class="flaat-right text-right">
-                    <a href="#" class="btn btn-green-white replace mr-2 d-inline-block">Replace Photo</a><a href="#" class="btn btn-success save">Save Photo</a>
+                    <a href="#" class="btn btn-green-white replace mr-2 d-inline-block">Replace</a><a href="#" class="btn btn-success save">Save</a>
                 </form>
             </div>
         </div>
